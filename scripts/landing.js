@@ -23,5 +23,7 @@ var animatePoints = function() {
         points[2].style.WebkitTransform = "scaleX(1) translateY(0)";
     };
 
-    
+    revealFirstPoint();
+     revealSecondPoint();
+     revealThirdPoint();
 };
