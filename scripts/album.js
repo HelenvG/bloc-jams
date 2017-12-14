@@ -81,11 +81,6 @@ var setCurrentAlbum = function(album) {
   }
 };
 
-
-var child = document.getElementsByClassName('album-view-title')[0];
-var noParent = document.querySelector('html');
-
-
 var findParentByClassName = function(element, targetClass) {
   var currentParent = element.parentElement;
   
@@ -103,8 +98,6 @@ var findParentByClassName = function(element, targetClass) {
     alert("No parent found.");
   }
 };
-
-
 
 var getSongItem = function(element) {
   switch (element.className) {
