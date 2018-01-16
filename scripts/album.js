@@ -221,6 +221,7 @@ var nextSong = function() {
   setSong(currentSongIndex + 1);
   currentSoundFile.play();
   updateSeekBarWhileSongPlays();
+  updatePlayerBarSong();
    
   var lastSongNumber = getLastSongNumber(currentSongIndex);
   var $nextSongNumberCell = getSongNumberCell(currentlyPlayingSongNumber);
@@ -246,6 +247,7 @@ var previousSong = function() {
   setSong(currentSongIndex + 1);
   currentSoundFile.play();
   updateSeekBarWhileSongPlays();
+  updatePlayerBarSong();
    
   $('.currently-playing .song-name').text(currentSongFromAlbum.title);
   $('.currently-playing .artist-name').text(currentAlbum.artist);
@@ -308,4 +310,3 @@ $(document).ready(function() {
   $nextButton.click(nextSong);
   $playPauseButton.click(togglePlayFromPlayerbar);
 });
-
